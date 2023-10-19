@@ -1,0 +1,7 @@
+wget
+numpy
+pandas
+tqdm
+transformers
+tensorflow
+datasets
