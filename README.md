@@ -6,6 +6,17 @@ This repository includes models, descriptions, references, notebooks on PMLDL As
 - BS21-DS-02
 - i.chernakov@innopolis.university
 
+## Requirements
+Run the following command to install all the required packages:
+```pip install -r requirements.txt``` if needed.
+
+## Getting Started
+To download data run the following command:
+```python .\src\data\download_data.py```
+
+To make dataset run the following command:
+```python .\src\data\make_dataset.py```
+
 ## Structure
 ```
 text-detoxification
