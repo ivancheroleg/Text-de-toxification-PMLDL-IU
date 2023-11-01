@@ -34,6 +34,19 @@ df.loc[temp_df.ref_tox > temp_df.trn_tox, 'ref_tox'] = temp_df.loc[temp_df.ref_t
 sentences = df.iloc[:, 0:2]
 sentences.columns = ["non-toxic", "toxic"]
 
+# Preprocessing
+# Remove duplicates
+sentences = sentences.drop_duplicates()
+
+# Remove empty sentences
+sentences = sentences.dropna()
+
+# Lowercase
+sentences = sentences.apply(lambda x: x.str.lower())
+
+# Remove sentences with length less than 3
+sentences = sentences[sentences.apply(lambda x: len(x["non-toxic"]) > 3 and len(x["toxic"]) > 3, axis=1)]
+
 # The schema of the dataset
 schema = {
     "train": {
