@@ -8,3 +8,5 @@ datasets
 transformers[torch]
 accelerate>=0.20.1
 sacrebleu
+evaluate
+wandb
