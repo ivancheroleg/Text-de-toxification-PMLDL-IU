@@ -14,4 +14,7 @@ I thought that the usage of the bigger model will improve the results. But it wa
 ![Comparison](figures/t5-comparison.png "eval-bleu")
 
 ## Hypothesis 3: GPT-2 model fine-tuned.
-
+GPT-2 is a transformer-based model, which is used for text generation. 
+As the model has twice as much parameters (~100 mil.) it could show better results, than t5-base (~200 mil), which is 
+too complicated. I tried to fine-tune gpt-2 model, but faced with dependencies limitations, even though
+followed this [tutorial](https://212digital.medium.com/fine-tuning-the-gpt-2-large-language-model-unlocking-its-full-potential-66e3a082ab9c)
